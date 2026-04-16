@@ -366,7 +366,7 @@ footer{background:var(--navy-mid);padding:52px 8% 26px;}
         <div class="form-header-badge">Free Quote</div>
       </div>
       <div class="form-body">
-        <form id="bookingForm">
+        <form action="https://formspree.io/f/mojyjzbd" method="POST">
           <!-- Hidden fields sent to Formspree -->
           <input type="hidden" name="_subject" value="New Booking Request — Audrey's Cleaning Services">
           <input type="hidden" name="_replyto" id="replytoField">
@@ -421,9 +421,11 @@ footer{background:var(--navy-mid);padding:52px 8% 26px;}
             </select>
           </div>
           <div class="fg"><label>Additional Notes</label><textarea name="notes" placeholder="Number of bedrooms/bathrooms, pets, special instructions..."></textarea></div>
-          <button type="button" class="btn-submit" id="submitBtn" onclick="submitBooking()">
-            <svg viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-            Send Appointment Request
+          <button type="submit" class="btn-submit">
+    Send Appointment Request
+</button>
+           
+            
           </button>
         </form>
         <div class="form-status" id="formSuccess">
